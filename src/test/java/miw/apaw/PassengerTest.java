@@ -30,7 +30,7 @@ public class PassengerTest {
 
     @Test
     void testGetClass(){
-        assertEquals(true,this.passenger.getClass());
+        assertEquals(true ,this.passenger.getFirstClass());
     }
 
     @Test
@@ -54,7 +54,7 @@ public class PassengerTest {
     @Test
     void testSetClass(){
         this.passenger.setClass(false);
-        assertEquals(false ,this.passenger.getClass());
+        assertEquals(false ,this.passenger.getFirstClass());
     }
 
 

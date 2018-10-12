@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: miw.apaw.PassengerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in miw.apaw.PassengerTest
+testGetClass  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <miw.apaw.Passenger>
+	at miw.apaw.PassengerTest.testGetClass(PassengerTest.java:33)
+
+testSetClass  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <miw.apaw.Passenger>
+	at miw.apaw.PassengerTest.testSetClass(PassengerTest.java:57)
+
