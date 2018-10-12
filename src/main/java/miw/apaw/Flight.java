@@ -16,6 +16,7 @@ public class Flight {
         this.date = LocalDateTime.now();
         this.destination = destination;
         this.weather = weather;
+        FlightObservable.getObservable().accept("New Flight added: "+this.noFlight);
     }
 
     public void setFlightDate(LocalDateTime date) {
