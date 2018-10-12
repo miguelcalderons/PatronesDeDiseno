@@ -13,7 +13,7 @@ public class FactoryFlightTest {
 
     @BeforeEach
     void before() {
-        this.flight = new Flight("NO400", "USA");
+        this.flight = new Flight("NO400", "USA", Flight.Weather.Sunny);
     }
 
     @Test
