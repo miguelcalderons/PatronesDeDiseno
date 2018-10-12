@@ -3,27 +3,27 @@ package miw.apaw;
 import java.time.LocalDateTime;
 
 public class Flight {
-    private String NoFlight;
-    private LocalDateTime Date;
-    private String Destination;
+    private String noFlight;
+    private LocalDateTime date;
+    private String destination;
 
-    enum Weather {Sunny, Windy, Rainy };
+    enum Weather {sunny, windy, rainy };
 
     private Weather weather;
 
-    public Flight(String NoFlight, String Destination, Weather weather){
-        this.NoFlight = NoFlight;
-        this.Date = LocalDateTime.now();
-        this.Destination = Destination;
+    public Flight(String noFlight, String destination, Weather weather){
+        this.noFlight = noFlight;
+        this.date = LocalDateTime.now();
+        this.destination = destination;
         this.weather = weather;
     }
 
     public void setFlightDate(LocalDateTime date) {
-        this.Date = date;
+        this.date = date;
     }
 
     public void setDestination(String destination) {
-        this.Destination = destination;
+        this.destination = destination;
     }
 
     public void setWeather(Weather weather) {
@@ -31,18 +31,18 @@ public class Flight {
     }
 
     public String getNoFlight() {
-        return NoFlight;
+        return noFlight;
     }
 
     public Weather getWeather() {
         return weather;
     }
 
-    public LocalDateTime GetTime() {
-        return Date;
+    public LocalDateTime getTime() {
+        return date;
     }
 
-    public String GetDestination() {
-        return Destination;
+    public String getDestination() {
+        return destination;
     }
 }

@@ -4,11 +4,11 @@ public class ReportBuilder {
 
     Report report;
 
-    public ReportBuilder(String Message, String Id) {
-        this.report = new Report(Message, Id);
+    public ReportBuilder(String message, String id) {
+        this.report = new Report(message, id);
     }
 
-    public ReportBuilder SafeLanding(Boolean safeLanding) {
+    public ReportBuilder safeLanding(Boolean safeLanding) {
         report.setSafeLanding(safeLanding);
         return this;
     }

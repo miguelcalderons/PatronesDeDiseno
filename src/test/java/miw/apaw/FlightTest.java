@@ -13,12 +13,12 @@ public class FlightTest {
 
     @BeforeEach
     void before() {
-        this.flight = new Flight("NO400", "USA", Flight.Weather.Windy);
+        this.flight = new Flight("NO400", "USA", Flight.Weather.windy);
     }
 
     @Test
     void testGetDestination(){
-        assertEquals("USA",this.flight.GetDestination());
+        assertEquals("USA",this.flight.getDestination());
     }
 
     @Test
@@ -28,26 +28,26 @@ public class FlightTest {
 
     @Test
     void testGetWeather() {
-        assertEquals(Flight.Weather.Windy ,this.flight.getWeather());
+        assertEquals(Flight.Weather.windy ,this.flight.getWeather());
     }
 
     @Test
     void testSetDate(){
         this.flight.setFlightDate(LocalDateTime.of(2018, 01, 21, 00, 00));
         LocalDateTime date =  LocalDateTime.of(2018, 01, 21, 00, 00);
-        assertEquals(date ,this.flight.GetTime());
+        assertEquals(date ,this.flight.getTime());
     }
 
     @Test
     void testSetDestination(){
         this.flight.setDestination("Irland");
-        assertEquals("Irland" ,this.flight.GetDestination());
+        assertEquals("Irland" ,this.flight.getDestination());
     }
 
     @Test
     void testSetWeather() {
-        this.flight.setWeather(Flight.Weather.Sunny);
-        assertEquals(Flight.Weather.Sunny ,this.flight.getWeather());
+        this.flight.setWeather(Flight.Weather.sunny);
+        assertEquals(Flight.Weather.sunny ,this.flight.getWeather());
     }
 
 

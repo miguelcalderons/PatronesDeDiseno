@@ -2,12 +2,12 @@ package miw.apaw;
 
 public class Report {
     private String id;
-    private String Message;
+    private String message;
     private Boolean safeLanding;
 
-    public Report(String Message, String Id) {
+    public Report(String message, String Id) {
         this.id = Id;
-        this.Message = Message;
+        this.message = message;
         this.safeLanding = true;
     }
 
@@ -16,7 +16,7 @@ public class Report {
     }
 
     public void setMessage(String Message) {
-        this.Message = Message;
+        this.message = Message;
     }
     public void setSafeLanding(Boolean safeLanding) {
         this.safeLanding = safeLanding;
@@ -27,7 +27,7 @@ public class Report {
     }
 
     public String getMessage() {
-        return Message;
+        return message;
     }
 
     public boolean getSafeLanding() {

@@ -20,7 +20,7 @@ public class ReportBuilderTest {
 
     @Test
     void testFullBuild() {
-        report = new ReportBuilder("Report test Full","2").SafeLanding(false).build();
+        report = new ReportBuilder("Report test Full","2").safeLanding(false).build();
 
         assertEquals("2",report.getId());
         assertEquals("Report test Full" ,report.getMessage());
