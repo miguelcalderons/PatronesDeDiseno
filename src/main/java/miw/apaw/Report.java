@@ -15,8 +15,8 @@ public class Report {
         this.id = id;
     }
 
-    public void setMessage(String Message) {
-        this.message = Message;
+    public void setMessage(String message) {
+        this.message = message;
     }
     public void setSafeLanding(Boolean safeLanding) {
         this.safeLanding = safeLanding;

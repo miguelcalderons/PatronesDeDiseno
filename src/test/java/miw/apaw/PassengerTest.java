@@ -3,7 +3,7 @@ package miw.apaw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PassengerTest {
 
@@ -30,7 +30,7 @@ public class PassengerTest {
 
     @Test
     void testGetClass(){
-        assertEquals(true ,this.passenger.getFirstClass());
+        assertTrue(this.passenger.getFirstClass());
     }
 
     @Test
@@ -54,7 +54,7 @@ public class PassengerTest {
     @Test
     void testSetClass(){
         this.passenger.setClass(false);
-        assertEquals(false ,this.passenger.getFirstClass());
+        assertFalse(this.passenger.getFirstClass());
     }
 
 

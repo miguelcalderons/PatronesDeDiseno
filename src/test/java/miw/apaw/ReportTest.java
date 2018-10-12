@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ReportTest {
 
@@ -21,7 +22,7 @@ public class ReportTest {
 
     @Test
     void testGetClass(){
-        assertEquals(true,this.report.getSafeLanding());
+        assertTrue(this.report.getSafeLanding());
     }
 
     @Test

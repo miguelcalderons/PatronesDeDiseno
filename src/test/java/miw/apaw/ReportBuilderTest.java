@@ -3,7 +3,7 @@ package miw.apaw;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ReportBuilderTest {
 
@@ -24,6 +24,6 @@ public class ReportBuilderTest {
 
         assertEquals("2",report.getId());
         assertEquals("Report test Full" ,report.getMessage());
-        assertEquals(false, report.getSafeLanding());
+        assertFalse(report.getSafeLanding());
     }
 }
