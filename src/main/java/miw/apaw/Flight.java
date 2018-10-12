@@ -6,11 +6,14 @@ public class Flight {
     private String NoFlight;
     private LocalDateTime Date;
     private String Destination;
+    enum Weather {Sunny, Windy, Rainy };
 
-    public Flight(String NoFlight, String Destination){
+    public Weather weather;
+    public Flight(String NoFlight, String Destination, Weather weather){
         this.NoFlight = NoFlight;
         this.Date = LocalDateTime.now();
         this.Destination = Destination;
+        this.weather = weather;
     }
 
     public void setFlightDate(LocalDateTime date) {
@@ -21,8 +24,16 @@ public class Flight {
         this.Destination = destination;
     }
 
+    public void setWeather(Weather weather) {
+        this.weather = weather;
+    }
+
     public String getNoFlight() {
         return NoFlight;
+    }
+
+    public Weather getWeather() {
+        return weather;
     }
 
     public LocalDateTime GetTime() {
