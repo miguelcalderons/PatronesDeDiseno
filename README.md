@@ -4,4 +4,4 @@
 
 ### Estado del código
 
-[![Build Status](https://travis-ci.org/miguelcalderons/PatronesDeDiseno.svg?branch=develop)](https://travis-ci.org/miw-upm/APAW-pd)
+[![Build Status](https://travis-ci.org/miguelcalderons/PatronesDeDiseno.svg?branch=develop)](https://travis-ci.org/miguelcalderons/PatronesDeDiseno)
