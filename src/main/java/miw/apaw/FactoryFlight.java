@@ -7,32 +7,27 @@ public class FactoryFlight {
 
     private static final FactoryFlight factory = new FactoryFlight();
 
-    private Map<String, Flight> flights;
+    private Map<String, Integer> flights;
 
-    private FactoryFlight() {
+    private int flight;
+
+    FactoryFlight() {
         this.flights = new HashMap<>();
+        this.flight = 0;
     }
 
     public static FactoryFlight getFactory() {
         return factory;
     }
 
-    public Flight getFlight(String noFlight) {
-        return flights.get(noFlight);
+    public int getKey(String key) {
+        return flights.computeIfAbsent(key, k -> flight++);
     }
 
-    public String addFlight(Flight flight) {
-        String id = flight.getNoFlight();
-        flights.put(id,flight);
-        return id;
-    }
-
-    public void modifyFlight(Flight flight) {
-        addFlight(flight);
-    }
-
-    public void removeFlight(String noFlight) {
-        this.flights.remove(noFlight);
+    public void removeReference(String key) {
+        this.flights.remove(key);
     }
 
 }
+
+
