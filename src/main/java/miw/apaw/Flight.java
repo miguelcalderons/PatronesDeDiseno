@@ -7,12 +7,10 @@ public class Flight {
     private LocalDateTime Date;
     private String Destination;
 
-    public Flight(String no400, String usa) {
-    }
-
     enum Weather {Sunny, Windy, Rainy };
 
-    public Weather weather;
+    private Weather weather;
+
     public Flight(String NoFlight, String Destination, Weather weather){
         this.NoFlight = NoFlight;
         this.Date = LocalDateTime.now();
