@@ -7,7 +7,7 @@ public class Flight {
     private LocalDateTime date;
     private String destination;
 
-    enum Weather {sunny, windy, rainy };
+    enum Weather {SUNNY, WINDY, RAINY }
 
     private Weather weather;
 

@@ -5,8 +5,8 @@ public class Report {
     private String message;
     private Boolean safeLanding;
 
-    public Report(String message, String Id) {
-        this.id = Id;
+    public Report(String message, String id) {
+        this.id = id;
         this.message = message;
         this.safeLanding = true;
     }

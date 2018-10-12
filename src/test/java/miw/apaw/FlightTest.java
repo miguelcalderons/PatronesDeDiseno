@@ -13,7 +13,7 @@ public class FlightTest {
 
     @BeforeEach
     void before() {
-        this.flight = new Flight("NO400", "USA", Flight.Weather.windy);
+        this.flight = new Flight("NO400", "USA", Flight.Weather.WINDY);
     }
 
     @Test
@@ -28,7 +28,7 @@ public class FlightTest {
 
     @Test
     void testGetWeather() {
-        assertEquals(Flight.Weather.windy ,this.flight.getWeather());
+        assertEquals(Flight.Weather.WINDY ,this.flight.getWeather());
     }
 
     @Test
@@ -46,8 +46,8 @@ public class FlightTest {
 
     @Test
     void testSetWeather() {
-        this.flight.setWeather(Flight.Weather.sunny);
-        assertEquals(Flight.Weather.sunny ,this.flight.getWeather());
+        this.flight.setWeather(Flight.Weather.SUNNY);
+        assertEquals(Flight.Weather.SUNNY ,this.flight.getWeather());
     }
 
 
